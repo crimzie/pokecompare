@@ -1,0 +1,21 @@
+Arcanine,1933,Bite,Flamethrower
+Clefable,1465,Pound,Moonblast
+Cloyster,1584,Frost Breath,Blizzard
+Nidoking,1664,Poison Jab,Sludge Wave
+Nidoqueen,1589,Poison Jab,Sludge Wave
+Nidoqueen,1514,Poison Jab,Sludge Wave
+Rapidash,1399,Ember,Fire Blast
+Slobro,1536,Water Gun,Water Pulse
+Snorlax,2194,Lick,Hyper Beam
+Starmie,1583,Water Gun,Hydro Pump
+Vaporeon,1687,Water Gun,Aqua Tail
+Vaporeon,2132,Water Gun,Hydro Pump
+Vileplume,1473,Acid,Petal Blizzard
+Wigglytuff,1490,Pound,Hyper Beam
+Golduck,1472,Confusion,Hydro Pump
+Hypno,1487,Zen Headbutt,Psychic
+Clefable,1543,Zen Headbutt,Moonblast
+Slobro,1543,Confusion,Psychic
+Slobro,1760,Confusion,Ice Beam
+Starmie,1547,Tackle,Hydro Pump
+Poliwrath,1621,Bubble,Ice Punch

@@ -1,0 +1,123 @@
+Acid,poi,Fast,10,1.05,9.5,7,6.7
+Aerial Ace,fly,Charge,30,2.9,10.3,-25,-8.6
+Air Cutter,fly,Charge,30,3.3,9.1,-25,-7.6
+Ancient Power,roc,Charge,35,3.6,9.7,-25,-6.9
+Aqua Jet,wat,Charge,25,2.35,10.6,-20,-8.5
+Aqua Tail,wat,Charge,45,2.35,19.1,-50,-21.3
+Bite,dar,Fast,6,0.5,12.0,7,14.0
+Blizzard,ice,Charge,100,3.9,25.6,-100,-25.6
+Body Slam,nor,Charge,40,1.56,25.6,-50,-32.1
+Bone Club,gro,Charge,25,1.6,15.6,-25,-15.6
+Brick Break,fig,Charge,30,1.6,18.8,-33,-20.6
+Brine,wat,Charge,25,2.4,10.4,-25,-10.4
+Bubble,wat,Fast,25,2.3,10.9,15,6.5
+Bubble Beam,wat,Charge,30,2.9,10.3,-25,-8.6
+Bug Bite,bug,Fast,5,0.45,11.1,7,15.6
+Bug Buzz,bug,Charge,75,4.25,17.6,-50,-11.8
+Bulldoze,gro,Charge,35,3.4,10.3,-25,-7.4
+Bullet Punch,ste,Fast,10,1.2,8.3,7,5.8
+Confusion,psy,Fast,15,1.51,9.9,7,4.6
+Cross Chop,fig,Charge,60,2,30.0,-100,-50.0
+Cross Poison,poi,Charge,25,1.5,16.7,-25,-16.7
+Dark Pulse,dar,Charge,45,3.5,12.9,-33,-9.4
+Dazzling Gleam,fai,Charge,55,4.2,13.1,-33,-7.9
+Dig,gro,Charge,70,5.8,12.1,-33,-5.7
+Disarming Voice,fai,Charge,25,3.9,6.4,-20,-5.1
+Discharge,ele,Charge,35,2.5,14.0,-33,-13.2
+Dragon Breath,dra,Fast,6,0.5,12.0,7,14.0
+Dragon Claw,dra,Charge,35,1.6,21.9,-50,-31.3
+Dragon Pulse,dra,Charge,65,3.6,18.1,-50,-13.9
+Draining Kiss,fai,Charge,25,2.8,8.9,-20,-7.1
+Drill Peck,fly,Charge,40,2.7,14.8,-33,-12.2
+Drill Run,gro,Charge,50,3.4,14.7,-33,-9.7
+Earthquake,gro,Charge,100,4.2,23.8,-100,-23.8
+Ember,fir,Fast,10,1.05,9.5,7,6.7
+Feint Attack,dar,Fast,12,1.04,11.5,7,6.7
+Fire Blast,fir,Charge,100,4.1,24.4,-100,-24.4
+Fire Fang,fir,Fast,10,0.84,11.9,4,4.8
+Fire Punch,fir,Charge,40,2.8,14.3,-33,-11.8
+Flame Burst,fir,Charge,30,2.1,14.3,-25,-11.9
+Flame Charge,fir,Charge,25,3.1,8.1,-20,-6.5
+Flame Wheel,fir,Charge,40,4.6,8.7,-25,-5.4
+Flamethrower,fir,Charge,55,2.9,19.0,-50,-17.2
+Flash Cannon,ste,Charge,60,3.9,15.4,-33,-8.5
+Frost Breath,ice,Fast,9,0.81,11.1,7,8.6
+Fury Cutter,bug,Fast,3,0.4,7.5,12,30.0
+Gunk Shot,poi,Charge,65,3,21.7,-100,-33.3
+Heat Wave,fir,Charge,80,3.8,21.1,-100,-26.3
+Horn Attack,nor,Charge,25,2.2,11.4,-25,-11.4
+Hurricane,fly,Charge,80,3.2,25.0,-100,-31.3
+Hydro Pump,wat,Charge,90,3.8,23.7,-100,-26.3
+Hyper Beam,nor,Charge,120,5,24.0,-100,-20.0
+Hyper Fang,nor,Charge,35,2.1,16.7,-33,-15.7
+Ice Beam,ice,Charge,65,3.65,17.8,-50,-13.7
+Ice Punch,ice,Charge,45,3.5,12.9,-33,-9.4
+Ice Shard,ice,Fast,15,1.4,10.7,7,5.0
+Icy Wind,ice,Charge,25,3.8,6.6,-20,-5.3
+Iron Head,ste,Charge,30,2,15.0,-33,-16.5
+Karate Chop,fig,Fast,6,0.8,7.5,7,8.8
+Leaf Blade,gra,Charge,55,2.8,19.6,-50,-17.9
+Lick,gho,Fast,5,0.5,10.0,7,14.0
+Low Kick,fig,Fast,5,0.6,8.3,7,11.7
+Low Sweep,fig,Charge,30,2.25,13.3,-25,-11.1
+Magnet Bomb,ste,Charge,30,2.8,10.7,-25,-8.9
+Megahorn,bug,Charge,80,3.2,25.0,-100,-31.3
+Metal Claw,ste,Fast,8,0.63,12.7,7,11.1
+Moonblast,fai,Charge,85,4.1,20.7,-100,-24.4
+Mud Bomb,gro,Charge,30,2.6,11.5,-25,-9.6
+Mud Shot,gro,Fast,6,0.55,10.9,7,12.7
+Mud Slap,gro,Fast,15,1.35,11.1,9,6.7
+Night Slash,dar,Charge,30,2.7,11.1,-25,-9.3
+Ominous Wind,gho,Charge,30,3.1,9.7,-25,-8.1
+Peck,fly,Fast,10,1.15,8.7,10,8.7
+Petal Blizzard,gra,Charge,65,3.2,20.3,-50,-15.6
+Play Rough,fai,Charge,55,2.9,19.0,-50,-17.2
+Poison Fang,poi,Charge,25,2.4,10.4,-20,-8.3
+Poison Jab,poi,Fast,12,1.05,11.4,7,6.7
+Poison Sting,poi,Fast,6,0.58,10.3,4,6.9
+Pound,nor,Fast,7,0.54,13.0,7,13.0
+Power Gem,roc,Charge,40,2.9,13.8,-33,-11.4
+Power Whip,gra,Charge,70,2.8,25.0,-100,-35.7
+Psybeam,psy,Charge,40,3.8,10.5,-25,-6.6
+Psychic,psy,Charge,55,2.8,19.6,-50,-17.9
+Psycho Cut,psy,Fast,7,0.57,12.3,7,12.3
+Psyshock,psy,Charge,40,2.7,14.8,-33,-12.2
+Quick Attack,nor,Fast,10,1.33,7.5,7,5.3
+Razor Leaf,gra,Fast,15,1.45,10.3,7,4.8
+Rock Slide,roc,Charge,50,3.2,15.6,-33,-10.3
+Rock Smash,fig,Fast,15,1.41,10.6,7,5.0
+Rock Throw,roc,Fast,12,1.36,8.8,7,5.1
+Rock Tomb,roc,Charge,30,3.4,8.8,-25,-7.4
+Scald,wat,Charge,55,4,13.8,-33,-8.3
+Scratch,nor,Fast,6,0.5,12.0,7,14.0
+Seed Bomb,gra,Charge,40,2.4,16.7,-33,-13.8
+Shadow Ball,gho,Charge,45,3.08,14.6,-33,-10.7
+Shadow Claw,gho,Fast,11,0.95,11.6,7,7.4
+Signal Beam,bug,Charge,45,3.1,14.5,-33,-10.6
+Sludge,poi,Charge,30,2.6,11.5,-25,-9.6
+Sludge Bomb,poi,Charge,55,2.6,21.2,-50,-19.2
+Sludge Wave,poi,Charge,70,3.4,20.6,-100,-29.4
+Solar Beam,gra,Charge,120,4.9,24.5,-100,-20.4
+Spark,ele,Fast,7,0.7,10.0,4,5.7
+Splash,wat,Fast,0,1.23,0.0,7,5.7
+Steel Wing,ste,Fast,15,1.33,11.3,4,3.0
+Stomp,nor,Charge,30,2.1,14.3,-25,-11.9
+Stone Edge,roc,Charge,80,3.1,25.8,-100,-32.3
+Struggle,bug,Charge,15,1.7,8.8,-20,-11.8
+Submission,fig,Charge,30,2.1,14.3,-33,-15.7
+Sucker Punch,dar,Fast,7,0.7,10.0,4,5.7
+Swift,nor,Charge,30,3,10.0,-25,-8.3
+Tackle,nor,Fast,12,1.1,10.9,7,6.4
+Thunder,ele,Charge,100,4.3,23.3,-100,-23.3
+Thunder Punch,ele,Charge,40,2.4,16.7,-33,-13.8
+Thunder Shock,ele,Fast,5,0.6,8.3,7,11.7
+Thunderbolt,ele,Charge,55,2.7,20.4,-50,-18.5
+Twister,dra,Charge,25,2.7,9.3,-20,-7.4
+Vice Grip,nor,Charge,25,2.1,11.9,-20,-9.5
+Vine Whip,gra,Fast,7,0.65,10.8,7,10.8
+Water Gun,wat,Fast,6,0.5,12.0,7,14.0
+Water Pulse,wat,Charge,35,3.3,10.6,-25,-7.6
+Wing Attack,fly,Fast,9,0.75,12.0,7,9.3
+Wrap,nor,Charge,25,4,6.3,-20,-5.0
+X-Scissor,bug,Charge,35,2.1,16.7,-33,-15.7
+Zen Headbutt,psy,Fast,12,1.05,11.4,4,3.8

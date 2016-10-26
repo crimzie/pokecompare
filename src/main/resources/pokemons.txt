@@ -1,0 +1,71 @@
+Butterfree,bug,fly,120,144,144,19.1,1454,Bug Bite;Confusion,Bug Buzz;Psychic;Signal Beam
+Beedrill,bug,poi,130,144,130,18.9,1439,Bug Bite;Poison Jab,Aerial Ace;Sludge Bomb;X-Scissor
+Parasect,bug,gra,120,162,170,23.2,1747,Bug Bite;Fury Cutter,Cross Poison;Solar Beam;X-Scissor
+Venomoth,bug,poi,140,172,154,25.2,1890,Bug Bite;Confusion,Bug Buzz;Poison Fang;Psychic
+Scyther,bug,fly,140,176,180,27.7,2073,Fury Cutter;Steel Wing,Bug Buzz;Night Slash;X-Scissor
+Pinsir,bug,non,130,184,186,28.4,2121,Fury Cutter;Rock Smash,Submission;Vice Grip;X-Scissor
+Dragonite,dra,fly,182,250,212,47.7,3500,Dragon Breath;Steel Wing,Dragon Claw;Dragon Pulse;Hyper Beam
+Raichu,ele,non,120,200,154,27.1,2028,Spark;Thunder Shock,Brick Break;Thunder;Thunder Punch
+Magneton,ele,ste,100,186,180,25.0,1879,Spark;Thunder Shock,Discharge;Flash Cannon;Magnet Bomb
+Electrode,ele,non,120,150,174,21.8,1646,Spark;Tackle,Discharge;Hyper Beam;Thunderbolt
+Electabuzz,ele,non,130,198,160,28.3,2119,Low Kick;Thunder Shock,Thunder;Thunderbolt;Thunder Punch
+Jolteon,ele,non,130,192,174,28.6,2140,Thunder Shock;Thunder Shock,Discharge;Thunder;Thunderbolt
+Clefable,fai,non,190,178,178,32.3,2397,Pound;Zen Headbutt,Dazzling Gleam;Moonblast;Psychic
+Primeape,fig,non,130,178,150,24.8,1864,Karate Chop;Low Kick,Cross Chop;Low Sweep;Night Slash
+Machamp,fig,non,180,198,180,35.0,2594,Bullet Punch;Karate Chop,Cross Chop;Stone Edge;Submission
+Hitmonlee,fig,non,100,148,172,19.6,1492,Low Kick;Rock Smash,Brick Break;Low Sweep;Stone Edge
+Hitmonchan,fig,non,100,138,204,19.9,1516,Bullet Punch;Rock Smash,Fire Punch;Ice Punch;Thunder Punch;Brick Break
+Charizard,fir,fly,156,212,182,35.1,2602,Ember;Wing Attack,Dragon Claw;Fire Blast;Flamethrower
+Ninetails,fir,non,146,176,194,29.3,2188,Ember;Feint Attack,Fire Blast;Flamethrower;Heat Wave
+Arcanine,fir,non,180,230,180,40.5,2983,Bite;Fire Fang,Bulldoze;Fire Blast;Flamethrower
+Rapidash,fir,non,130,200,170,29.5,2199,Ember;Low Kick,Drill Run;Fire Blast;Heat Wave
+Magmar,fir,non,130,214,158,30.4,2265,Ember;Karate Chop,Fire Blast;Fire Punch;Flamethrower
+Flareon,fir,non,130,238,178,35.6,2643,Ember,Heat Wave;Fire Blast;Flamethrower
+Gengar,gho,poi,120,204,156,27.8,2078,Shadow Claw;Sucker Punch,Dark Pulse;Shadow Ball;Sludge Bomb
+Venusaur,gra,poi,160,198,200,34.8,2580,Razor Leaf;Vine Whip,Petal Blizzard;Sludge Bomb;Solar Beam
+Vileplume,gra,poi,150,202,190,33.6,2492,Acid;Razor Leaf,Moonblast;Petal Blizzard;Solar Beam
+Victreebel,gra,poi,160,222,152,34.1,2530,Acid;Razor Leaf,Leaf Blade;Sludge Bomb;Solar Beam
+Exeggutor,gra,psy,190,232,164,40.1,2955,Confusion;Zen Headbutt,Psychic;Seed Bomb;Solar Beam
+Tangela,gra,non,130,164,152,23.1,1739,Vine Whip,Power Whip;Sludge Bomb;Solar Beam
+Jynx,ice,psy,130,172,134,22.8,1716,Frost Breath;Pound,Draining Kiss;Ice Punch;Psyshock
+Pidgeot,nor,fly,166,170,166,28.0,2091,Steel Wing;Wing Attack,Aerial Ace;Air Cutter;Hurricane
+Raticate,nor,non,110,146,150,19.0,1444,Bite;Quick Attack,Dig;Hyper Beam;Hyper Fang
+Fearow,nor,fly,130,168,146,23.2,1746,Peck;Steel Wing,Aerial Ace;Drill Run;Twister
+Wigglytuff,nor,fai,280,168,108,29.1,2177,Feint Attack;Pound,Dazzling Gleam;Hyper Beam;Play Rough
+Persian,nor,non,130,156,146,21.6,1631,Feint Attack;Scratch,Night Slash;Play Rough;Power Gem
+Dodrio,nor,fly,120,182,150,24.4,1836,Feint Attack;Steel Wing,Aerial Ace;Air Cutter;Drill Peck
+Lickitung,nor,non,180,126,160,21.5,1626,Lick;Zen Headbutt,Hyper Beam;Power Whip;Stomp
+Porygon,nor,non,130,156,158,22.4,1691,Tackle;Zen Headbutt,Discharge;Psybeam;Signal Beam
+Snorlax,nor,non,320,180,180,42.2,3112,Lick;Zen Headbutt,Body Slam;Earthquake;Hyper Beam
+Arbok,poi,non,120,166,166,23.5,1767,Acid;Bite,Dark Pulse;Gunk Shot;Sludge Wave
+Nidoqueen,poi,gro,180,184,190,33.5,2485,Bite;Poison Jab,Earthquake;Sludge Wave;Stone Edge
+Nidoking,poi,gro,162,204,170,33.3,2475,Fury Cutter;Poison Jab,Earthquake;Megahorn;Sludge Wave
+Golbat,poi,fly,150,164,164,25.6,1921,Bite;Wing Attack,Air Cutter;Ominous Wind;Poison Fang
+Muk,poi,non,210,180,188,35.1,2602,Lick;Poison Jab,Dark Pulse;Gunk Shot;Sludge Wave
+Weezing,poi,non,130,190,198,30.2,2250,Tackle,Dark Pulse;Shadow Ball;Sludge Bomb
+Alakazam,psy,non,110,186,152,24.1,1813,Confusion;Psycho Cut,Dazzling Gleam;Psychic;Shadow Ball
+Hypno,psy,non,170,162,196,29.3,2184,Confusion;Zen Headbutt,Psychic;Psyshock;Shadow Ball
+MrMime,psy,fai,80,154,196,19.6,1494,Confusion;Zen Headbutt,Psybeam;Psychic;Shadow Ball
+Sandslash,gro,non,150,150,172,24.1,1810,Metal Claw;Mud Shot,Bulldoze;Earthquake;Rock Tomb
+Digtrio,gro,non,70,148,140,15.1,1168,Mud Slap;Sucker Punch,Earthquake;Mud Bomb;Stone Edge
+Marowak,gro,non,120,140,202,21.9,1656,Mud Slap;Rock Smash,Bone Club;Dig;Earthquake
+Rhydon,gro,roc,210,166,160,30.1,2243,Mud Slap;Rock Smash,Earthquake;Megahorn;Stone Edge
+Golem,roc,gro,160,176,198,30.9,2303,Mud Slap;Rock Throw,Ancient Power;Earthquake;Stone Edge
+Onix,roc,gro,70,90,186,10.9,857,Rock Throw;Tackle,Iron Head;Rock Slide;Stone Edge
+Omastar,roc,wat,140,180,202,30.0,2233,Mud Shot;Water Gun,Ancient Power;Hydro Pump;Rock Slide
+Kabutops,roc,wat,120,190,190,28.5,2130,Fury Cutter;Mud Shot,Ancient Power;Stone Edge;Water Pulse
+Aerodactyl,roc,fly,160,182,162,29.0,2165,Bite;Steel Wing,Ancient Power;Hyper Beam;Iron Head
+Blastoise,wat,non,158,186,222,34.3,2542,Bite;Water Gun,Flash Cannon;Hydro Pump;Ice Beam
+Golduck,wat,non,160,194,176,32.1,2386,Water Gun;Confusion,Hydro Pump;Ice Beam;Psychic
+Poliwrath,wat,fig,180,180,202,33.8,2505,Bubble;Mud Shot,Hydro Pump;Ice Punch;Submission
+Tentacruel,wat,poi,160,170,196,29.8,2220,Acid;Poison Jab,Blizzard;Hydro Pump;Sludge Wave
+Slobro,wat,psy,190,184,198,35.1,2597,Confusion;Water Gun,Ice Beam;Psychic;Water Pulse
+Dewgong,wat,ice,180,156,192,28.7,2145,Frost Breath;Ice Shard,Aqua Jet;Blizzard;Icy Wind
+Cloyster,wat,ice,100,196,196,27.4,2052,Frost Breath;Ice Shard,Blizzard;Hydro Pump;Icy Wind
+Kingler,wat,non,110,178,168,24.2,1823,Metal Claw;Mud Shot,Vice Grip;Water Pulse;X-Scissor
+Seadra,wat,non,110,176,150,22.7,1713,Dragon Breath;Water Gun,Blizzard;Dragon Pulse;Hydro Pump
+Seaking,wat,non,160,172,160,27.3,2043,Peck;Poison Jab,Drill Run;Icy Wind;Megahorn
+Starmie,wat,psy,120,194,192,29.2,2182,Tackle;Water Gun,Hydro Pump;Power Gem;Psychic;Psybeam
+Gyarados,wat,fly,190,192,196,36.4,2688,Bite,Dragon Pulse;Hydro Pump;Twister
+Lapras,wat,ice,260,186,190,40.4,2980,Frost Breath;Ice Shard,Blizzard;Dragon Pulse;Ice Beam
+Vaporeon,wat,non,260,186,168,38.1,2816,Water Gun,Aqua Tail;Hydro Pump;Water Pulse
