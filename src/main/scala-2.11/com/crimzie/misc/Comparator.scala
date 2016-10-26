@@ -7,9 +7,9 @@ import scala.io.Source
 
 object Comparator extends App {
 
-  case class PokeData(tipe: (String, String), cpStep: Double, cpMax: Int, fast: Seq[String], charge: Seq[String])
+  case class PokeData(pType: (String, String), cpStep: Double, cpMax: Int, fast: Seq[String], charge: Seq[String])
 
-  case class MoveData(tipe: String, group: String, time: Double, damage: Int, energy: Int)
+  case class MoveData(mType: String, group: String, time: Double, damage: Int, energy: Int)
 
   case class Compared(fastA: String, chargeA: String, movesB: Seq[(String, String, Double)], min: Double, avg: Double,
                       max: Double)
@@ -71,8 +71,10 @@ object Comparator extends App {
       }
       .toMap
 
-  def pokeDps(pokemon: String, cp: Int, target: String): Map[String, Map[String, (Double, Double)]] = {
-    val (tT1, tT2) = if (target.isEmpty) ("non", "non") else pokemons(target).tipe
+  val frm: Double => String = _ formatted "%2.2f"
+
+  def pokeDps(pokemon: String, cp: Int = 0, target: String = ""): Map[String, Map[String, (Double, Double)]] = {
+    val (tT1, tT2) = if (target.isEmpty) ("non", "non") else pokemons(target).pType
     val PokeData((pT1, pT2), _, mCP, fast, charge) = pokemons(pokemon)
     val pCP = if (cp > 0) cp else mCP
     fast
@@ -99,32 +101,26 @@ object Comparator extends App {
       .toMap
   }
 
-  def pokeDps(pokemon: String, target: String): Map[String, Map[String, (Double, Double)]] = pokeDps(pokemon, 0, target)
-
-  def pokeDps(pokemon: String, cp: Int): Map[String, Map[String, (Double, Double)]] = pokeDps(pokemon, cp, "")
-
-  def pokeDps(pokemon: String): Map[String, Map[String, (Double, Double)]] = pokeDps(pokemon, "")
-
-  def pokeCompare(pokemon: String, pCp: Int, vs: String, vCp: Int): Seq[Compared] = {
+  def pokeCompare(pokemon: String, pCp: Int = 0, vs: String, vCp: Int = 0): Seq[Compared] = {
     val cp1 = if (pCp == 0) pokemons(pokemon).cpMax else pCp
     val cp2 = if (vCp == 0) pokemons(vs).cpMax else vCp
-    pokeDps(pokemon, cp1, vs)
-      .flatMap(fA => fA._2.map { cA =>
-        val seq =
-          pokeDps(vs, cp2, pokemon)
-            .flatMap(fB => fB._2.map(cB => (fB._1, cB._1, cA._2._2 / cB._2._2)))
-            .toSeq
-            .sortBy(_._3)
-        val num = seq.map(_._3)
-        Compared(fA._1, cA._1, seq, num.min, num.sum / num.size, num.max)
-      })
+    (for {
+      (fA, cAs) <- pokeDps(pokemon, cp1, vs)
+      (cA, (_, dpsA)) <- cAs
+    } yield {
+      val seq =
+        (for {
+          (fB, cBs) <- pokeDps(vs, cp2, pokemon)
+          (cB, (_, dpsB)) <- cBs
+        } yield (fB, cB, dpsA / dpsB))
+          .toSeq
+          .sortBy(_._3)
+      val num = seq.map(_._3)
+      Compared(fA, cA, seq, num.min, num.sum / num.size, num.max)
+    })
       .toSeq
       .sortBy(_.min)
   }
-
-  def pokeCompare(pokemon: String, pCp: Int, vs: String): Seq[Compared] = pokeCompare(pokemon, pCp, vs, 0)
-
-  def pokeCompare(pokemon: String, vs: String): Seq[Compared] = pokeCompare(pokemon, 0, vs)
 
   def printCounter(vs: String, n: Int) = {
     pokemons
@@ -134,100 +130,78 @@ object Comparator extends App {
       .reverse
       .take(n)
       .foreach { x =>
-        println(s"\n${x._1} (${x._2.fastA} + ${x._2.chargeA}): min ${x._2.min.toString.take(4)}; " +
-          s"avg ${x._2.avg.toString.take(4)}; max ${x._2.max.toString.take(4)}")
-        x._2.movesB.foreach { y =>
-          println(s"$vs (${y._1} + ${y._2}):  ${y._3.toString.take(4)}")
-        }
+        val (p, Compared(fA, cA, mB, min, avg, max)) = x
+        println(s"\n$p ($fA + $cA): min ${frm(min)}; avg ${frm(avg)}; max ${frm(max)}")
+        for ((fB, cB, rel) <- mB) println(s"$vs ($fB + $cB): ${frm(rel)}")
       }
   }
 
   def printAssess(pokemon: String, fast: String, charge: String, cp: Int, n: Int) = {
     val limit = pokemons(pokemon).cpMax
-    println(s" $cp CP / $limit CP maximum: ${(100.0 * cp / limit) formatted "%2.1f"}%\n")
+    println(s" $cp CP / $limit CP maximum: ${frm(100.0 * cp / limit)}%\n")
     for {
-      fast <- pokeDps(pokemon, cp)
-      charge <- fast._2.toList.sortBy(_._2._1).reverse
-    } println(s"${fast._1} + ${charge._1}: \t\t${charge._2._1 formatted "%2.2f"} \t${charge._2._2 formatted "%2.2f"}")
+      (fast, charges) <- pokeDps(pokemon, cp)
+      (charge, dps) <- charges.toList.sortBy(_._2._1).reverse
+    } println(s"$fast + $charge: \t\t${frm(dps._1)} \t${frm(dps._2)}")
     println(s"\n$pokemon ($fast + $charge):")
     pokemons
       .map { p =>
         (p._1,
-          pokeCompare(pokemon, p._1)
+          pokeCompare(pokemon = pokemon, vs = p._1)
             .find(x => x.fastA == fast && x.chargeA == charge)
-            .getOrElse(Compared("-", "-", Seq(("-", "-", 1.00)), 1.00, 1.00, 1.00)))
+            .getOrElse(Compared("-", "-", Seq(("-", "-", 1.0)), 1.0, 1.0, 1.0)))
       }
       .toSeq
       .sortBy(_._2.min)
       .reverse
       .take(n)
       .foreach { x =>
-        println(s"\n${x._1}: min ${x._2.min.toString.take(4)}; avg ${x._2.avg.toString.take(4)}; " +
-          s"max ${x._2.max.toString.take(4)}")
-        x._2.movesB.foreach { y => println(s"(${y._1} + ${y._2}):  ${y._3.toString.take(4)}") }
+        val (p, Compared(_, _, mB, min, avg, max)) = x
+        println(s"\n$p: min ${frm(min)}; avg ${frm(avg)}; max ${frm(max)}")
+        for ((fB, cB, rel) <- mB) println(s"($fB + $cB):  ${frm(rel)}")
       }
   }
 
   def printTeamRoster(pokemon: String, cp: Int, n: Int) = {
     println(s"$pokemon $cp:")
     team
-      .map {
-        p =>
-          (p._1,
-            pokeCompare(p._1, p._2._1, pokemon, cp)
-              .find(x => x.fastA == p._2._2 && x.chargeA == p._2._3)
-              .getOrElse(Compared("-", "-", Seq(("-", "-", 1.00)), 1.00, 1.00, 1.00)),
-            p._2._2,
-            p._2._3)
+      .map { x =>
+        val (p, (pCp, fP, cP)) = x
+        val compared =
+          pokeCompare(p, pCp, pokemon, cp)
+            .find(x => x.fastA == fP && x.chargeA == cP)
+            .getOrElse(Compared("-", "-", Seq(("-", "-", 1.00)), 1.00, 1.00, 1.00))
+        (p, compared, fP, cP)
       }
       .sortBy(_._2.min)
       .reverse
       .take(n)
-      .foreach {
-        x =>
-          println(s"\n${
-            x._1
-          } (${
-            x._3
-          } + ${
-            x._4
-          }): min ${
-            x._2.min.toString.take(4)
-          }; avg ${
-            x._2.avg.toString.take(4)
-          }; " +
-            s"max ${
-              x._2.max.toString.take(4)
-            }")
-          x._2.movesB.foreach {
-            y => println(s"(${
-              y._1
-            } + ${
-              y._2
-            }):   ${
-              y._3.toString.take(4)
-            }")
-          }
+      .foreach { x =>
+        val (p, Compared(fA, cA, mB, min, avg, max), fP, cP) = x
+        println(s"\n$p ($fP + $cP): min ${frm(min)}; avg ${frm(avg)}; max ${frm(max)}")
+        for ((fB, cB, rel) <- mB) println(s"($fB + $cB):   ${frm(rel)}")
       }
   }
 
-//    printTeamRoster("Gyarados", 2415, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Gyarados", 2334, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Venusaur", 2151, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Poliwrath", 2134, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Nidoqueen", 2017, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Nidoqueen", 1977, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Lapras", 1927, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Charizard", 1910, 5)
-//    println("\n==========\n")
-//    printTeamRoster("Flareon", 1686, 5)
+//      printTeamRoster("Gyarados", 2415, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Gyarados", 2334, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Venusaur", 2151, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Poliwrath", 2134, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Nidoqueen", 2017, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Nidoqueen", 1977, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Lapras", 1927, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Charizard", 1910, 5)
+  //    println("\n==========\n")
+  //    printTeamRoster("Flareon", 1686, 5)
 
-  printAssess("Victreebel", "Razor Leaf", "Leaf Blade", 1801, 50)
+  //  printCounter("Vaporeon", 5)
+
+//  printAssess("Victreebel", "Razor Leaf", "Leaf Blade", 1801, 50)
 }
