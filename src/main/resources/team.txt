@@ -6,7 +6,7 @@ Nidoqueen,1589,Poison Jab,Sludge Wave
 Nidoqueen,1514,Poison Jab,Sludge Wave
 Rapidash,1399,Ember,Fire Blast
 Slobro,1536,Water Gun,Water Pulse
-Snorlax,2194,Lick,Hyper Beam
+Snorlax,2414,Lick,Hyper Beam
 Starmie,1583,Water Gun,Hydro Pump
 Vaporeon,1687,Water Gun,Aqua Tail
 Vaporeon,2132,Water Gun,Hydro Pump
