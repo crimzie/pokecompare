@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a998941-ebdd-4d69-9980-9c97f8c0edf3" name="Default" comment="">
+<<<<<<< HEAD
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+>>>>>>> master
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/com/crimzie/misc/Comparator.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/com/crimzie/misc/Comparator.scala" />
     </list>
@@ -140,8 +144,13 @@
       <file leaf-file-name="Comparator.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/crimzie/misc/Comparator.scala">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1800">
               <caret line="172" column="3" selection-start-line="172" selection-start-column="3" selection-end-line="172" selection-end-column="3" />
+=======
+            <state relative-caret-position="513">
+              <caret line="186" column="33" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -163,6 +172,9 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.scala" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -211,8 +223,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+>>>>>>> master
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -889,15 +904,23 @@
       <workItem from="1475778852491" duration="1140000" />
       <workItem from="1477397541162" duration="9410000" />
       <workItem from="1477422614241" duration="524000" />
+<<<<<<< HEAD
       <workItem from="1477495043270" duration="8943000" />
       <workItem from="1477545467182" duration="6606000" />
       <workItem from="1477553276765" duration="739000" />
       <workItem from="1477609873141" duration="156000" />
+=======
+      <workItem from="1477495043270" duration="7849000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="101558000" />
+=======
+    <option name="totallyTimeSpent" value="92963000" />
+>>>>>>> master
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1393,8 +1416,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/crimzie/misc/Comparator.scala">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1800">
           <caret line="172" column="3" selection-start-line="172" selection-start-column="3" selection-end-line="172" selection-end-column="3" />
+=======
+        <state relative-caret-position="513">
+          <caret line="186" column="33" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
